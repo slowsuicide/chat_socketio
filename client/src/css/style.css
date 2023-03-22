@@ -1,0 +1,112 @@
+html {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif; }
+
+.msgChatWindow {
+  margin: 100px auto;
+  display: flex;
+  max-width: 1000px;
+  height: 700px;
+  box-shadow: 8px 4px 8px 0px rgba(34, 60, 80, 0.2); }
+  @media (max-width: 750px) {
+    .msgChatWindow .msgProfile {
+      display: none; } }
+
+.msgProfile {
+  min-width: 300px;
+  height: 100%;
+  background: #cfd3d7; }
+  .msgProfile img {
+    image-rendering: optimizeQuality;
+    width: 100%;
+    height: 250px; }
+  .msgProfile .profile_main-info {
+    padding: 10px 10px; }
+    .msgProfile .profile_main-info .profile_name {
+      display: flex;
+      align-items: center;
+      font-size: 25px;
+      font-weight: 600; }
+      .msgProfile .profile_main-info .profile_name .friends_status {
+        margin-left: 10px; }
+    .msgProfile .profile_main-info .profile_description {
+      font-size: 15px;
+      color: #727171;
+      margin-bottom: 20px; }
+    .msgProfile .profile_main-info .profile_other-info {
+      margin-top: 15px; }
+      .msgProfile .profile_main-info .profile_other-info .block_name {
+        font-size: 15px;
+        color: #727171; }
+      .msgProfile .profile_main-info .profile_other-info .block_description {
+        font-size: 20px;
+        font-weight: 500; }
+
+.msgWindow {
+  flex-grow: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column; }
+
+.msgHistory {
+  flex: 1;
+  overflow-y: scroll;
+  height: 95%;
+  background-color: #e4e3e3; }
+
+.msgInputForm {
+  max-width: 700px;
+  height: 5%; }
+  .msgInputForm input {
+    background: none;
+    width: 100%;
+    height: 100%;
+    font-size: 15px;
+    border: 0px;
+    outline: none; }
+
+.msgMessage {
+  padding-top: 10px;
+  display: flex;
+  word-break: break-all; }
+  .msgMessage .profile_photo {
+    width: 50px;
+    padding: 0 20px 0 10px; }
+    .msgMessage .profile_photo img {
+      image-rendering: optimizeQuality;
+      width: 50px;
+      height: 50px;
+      border-radius: 5px; }
+  .msgMessage .date-info {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    color: rgba(0, 0, 0, 0.329); }
+    .msgMessage .date-info .left-line,
+    .msgMessage .date-info .right-line {
+      height: 1px;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.093); }
+    .msgMessage .date-info .date-text {
+      padding: 0 15px;
+      white-space: nowrap; }
+  .msgMessage .message-info {
+    display: inline; }
+    .msgMessage .message-info .message-header {
+      font-size: 14px;
+      display: flex; }
+      .msgMessage .message-info .message-header .name {
+        font-weight: 600; }
+      .msgMessage .message-info .message-header .time {
+        padding: 0 0 0 10px;
+        color: #bbbaba; }
+    .msgMessage .message-info .text-info {
+      font-size: 17px; }
+
+::-webkit-scrollbar {
+  width: 8px; }
+
+::-webkit-scrollbar-thumb {
+  background-color: #c3c3c3;
+  border-radius: 10px; }
+
+/*# sourceMappingURL=style.css.map */
