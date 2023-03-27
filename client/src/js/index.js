@@ -1,7 +1,7 @@
 import MsgWindow from './msg_window.js';
-
 export let user = {};
-export const socket = io();
+const socketio = require('socket.io-client')
+export const socket = socketio.io('http://localhost:3000');
 
 
 

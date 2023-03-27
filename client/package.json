@@ -1,0 +1,23 @@
+{
+  "name": "socket_chat",
+  "version": "1.0.0",
+  "description": "chat on socket-io",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack"
+  },
+  "keywords": [
+    "js",
+    "socket-io",
+    "webpack"
+  ],
+  "author": "SlowSuicide <alexander.afonin1997@ya.ru>",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^5.76.3",
+    "webpack-cli": "^5.0.1"
+  },
+  "dependencies": {
+    "socket.io-client": "^4.6.1"
+  }
+}
